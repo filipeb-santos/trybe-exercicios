@@ -1,2 +1,3 @@
 # trybe-exercicios
-Diretório para os exercícios da trybe
+# Meu repositório de exercícios
+## Para instalar digite:
