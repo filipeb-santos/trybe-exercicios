@@ -1,10 +1,9 @@
-const nota = 90;
-if (nota >= 80) {
-    console.log("Parabéns, você faz parte do grupo de pessoas aprovadas");
-}
-else if (nota < 80 && nota >= 60) {
-    console.log("Você está na nossa lista de espera");
-}
+let num1 = 7;
+let num2 = 5;
+
+if (num1 == num2) {
+    console.log(num1 + num2)
+} 
 else {
-    console.log("Infelizmente, você reprovou");
-}
+    console.log(num1 * num2)
+} 
