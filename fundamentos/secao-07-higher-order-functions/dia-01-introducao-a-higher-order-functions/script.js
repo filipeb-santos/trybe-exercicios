@@ -53,3 +53,4 @@ const verifyAges = (arr, age) => {
 
 console.log(verifyAges(people, 18));
 console.log(verifyAges(people, 14));
+console.log(people.every((age) => age.age > 15));
