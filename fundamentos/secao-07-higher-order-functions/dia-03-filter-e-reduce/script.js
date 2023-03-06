@@ -76,3 +76,28 @@ const biggerName = countries.map((countryName) => countryName.name).reduce((acc,
 
 console.log(biggerName)
 
+const counterA = countries.map((countryName) => countryName.name).filter((countrysWithA) => countrysWithA.includes('a' || 'A')).map((Aarray) => Aarray.split('')).flat().filter((counter) => counter.toLowerCase() === 'a' || counter === 'Å').length;
+
+console.log(counterA);
+
+const names = [
+  'Aanemarie', 'Adervandes', 'Akifusa',
+  'Abegildo', 'Adicellia', 'Aladonata',
+  'Abeladerco', 'Adieidy', 'Alarucha',
+];
+const countA = names.map((Aarray) => Aarray.split('')).flat().filter((counter) => counter.toLowerCase() === 'a').length;
+
+console.log(countA);
+
+//Exercício 5:
+
+const students = ['Pedro Henrique', 'Miguel', 'Maria Clara'];
+const grades = [[9, 8, 10, 7, 5], [10, 9, 9, 10, 8], [10, 7, 10, 8, 9]];
+const expectedResult = [
+ { name: 'Pedro Henrique', average: 7.8 },
+ { name: 'Miguel', average: 9.2 },
+ { name: 'Maria Clara', average: 8.8 },
+];
+const studentAverage = students.map((student,index) => ({ name: student, average: grades[index].reduce((acc, curr) => acc + curr) / grades[index].length}));
+
+console.log(studentAverage)
