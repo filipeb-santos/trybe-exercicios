@@ -66,7 +66,13 @@ const countries = [
   }
 ];
 
-const sumpopulation = countries.map((pop) => pop.population)
-const sum = sumpopulation.reduce((acc, value) => acc + value);
-console.log (sum)
+const sumpopulation = countries.map((pop) => pop.population).reduce((acc, value) => acc + value);
+console.log (sumpopulation);
+
+const countryArea = countries.map((area) => area.area).reduce((acc, value) => acc + value);
+console.log (countryArea);
+
+const biggerName = countries.map((countryName) => countryName.name).reduce((acc, value) => acc.length >= value.length ? acc : value);
+
+console.log(biggerName)
 
